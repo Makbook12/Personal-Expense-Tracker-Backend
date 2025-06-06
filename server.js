@@ -12,7 +12,6 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// ADD THIS ROOT ROUTE - This fixes the "Cannot GET /" error
 app.get('/', (req, res) => {
   res.json({
     message: 'Personal Expense Tracker API is running successfully!',
